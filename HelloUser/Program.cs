@@ -6,9 +6,8 @@ namespace HelloUser
     {
         static void Main(string[] args)
         {
-            string name;
-            name = Console.ReadLine();
-            Console.WriteLine("Здравствуйте, " + name + "!");
+            string name = Console.ReadLine();
+            Console.WriteLine($"Здравствуйте, {name}!");
         }
     }
 }
