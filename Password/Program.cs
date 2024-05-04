@@ -8,17 +8,15 @@ namespace Password
         {
             string password = "LagertaSuperCat!";
             string passwordInput = Console.ReadLine();
-            int numberCharactersInPassword = password.Length;
-            int numberCharactersInPasswordInput = passwordInput.Length;
-            if (password.Equals(passwordInput))
+            if (password.Length == passwordInput.Length)
             {
                 Console.WriteLine("Пароль верный!");
             }
-            else if (numberCharactersInPassword > numberCharactersInPasswordInput)
+            else if (password.Length > passwordInput.Length)
             {
                 Console.WriteLine("Пароль неверный! Строка слишком короткая.");
             }
-            else if (numberCharactersInPassword < numberCharactersInPasswordInput)
+            else if (password.Length < passwordInput.Length)
             {
                 Console.WriteLine("Пароль неверный! Строка слишком длинная.");
             }
