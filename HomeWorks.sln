@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Circles", "Circles\Circles.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloUser", "HelloUser\HelloUser.csproj", "{32FC2074-F5DC-47CC-8F66-1FC72DF66DAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Password", "Password\Password.csproj", "{B0F4DC2C-70C3-45B3-A7EA-DEB83A559F64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Password", "Password\Password.csproj", "{B0F4DC2C-70C3-45B3-A7EA-DEB83A559F64}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeapYear", "LeapYear\LeapYear.csproj", "{C6F39E14-24FE-47CB-9D9E-19585733A725}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeapYear", "LeapYear\LeapYear.csproj", "{C6F39E14-24FE-47CB-9D9E-19585733A725}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaOfTriangle", "AreaOfTriangle\AreaOfTriangle.csproj", "{EFA6D4FC-3046-4C49-A421-ACB063C02B66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{C6F39E14-24FE-47CB-9D9E-19585733A725}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6F39E14-24FE-47CB-9D9E-19585733A725}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6F39E14-24FE-47CB-9D9E-19585733A725}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFA6D4FC-3046-4C49-A421-ACB063C02B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFA6D4FC-3046-4C49-A421-ACB063C02B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFA6D4FC-3046-4C49-A421-ACB063C02B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFA6D4FC-3046-4C49-A421-ACB063C02B66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
