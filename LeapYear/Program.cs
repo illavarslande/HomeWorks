@@ -7,7 +7,11 @@ namespace LeapYear
         static void Main(string[] args)
         {
             Console.WriteLine("Введите год: ");
-            if (int.TryParse(Console.ReadLine(), out int year) && year > 0)
+            if (!int.TryParse(Console.ReadLine(), out int year) || year < 0)
+            {
+                Console.WriteLine("Вы ввели буквы или отрицательное значение.");
+            }
+            else
             {
                 if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
                 {
@@ -17,10 +21,6 @@ namespace LeapYear
                 {
                     Console.WriteLine("Этот год не високосный!");
                 }
-            }
-            else
-            {
-                Console.WriteLine("Вы ввели буквы или отрицательное значение.");
             }
         }
     }
