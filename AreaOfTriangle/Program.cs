@@ -22,7 +22,9 @@ namespace AreaOfTriangle
             double sideBC = Math.Sqrt(Math.Pow((x3 - x2), 2) + Math.Pow((y3 - y2), 2));
             double sideAC = Math.Sqrt(Math.Pow((x3 - x1), 2) + Math.Pow((y3 - y1), 2));
 
-            if ((x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) == 0)
+            const double epsilon = 1.0e-10;
+
+            if (Math.Abs((x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2))) <= epsilon)
             {
                 Console.WriteLine("Точки лежат на одной прямой.");
             }
