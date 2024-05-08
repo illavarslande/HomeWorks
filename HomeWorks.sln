@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeapYear", "LeapYear\LeapYe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaOfTriangle", "AreaOfTriangle\AreaOfTriangle.csproj", "{EFA6D4FC-3046-4C49-A421-ACB063C02B66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Age", "Age\Age.csproj", "{FEB6C248-741C-432C-A6DE-ED266F7C0D27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadraticEquation", "QuadraticEquation\QuadraticEquation.csproj", "{3F73699C-7F76-4732-BD3B-DA0710D4A7D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{EFA6D4FC-3046-4C49-A421-ACB063C02B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFA6D4FC-3046-4C49-A421-ACB063C02B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFA6D4FC-3046-4C49-A421-ACB063C02B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB6C248-741C-432C-A6DE-ED266F7C0D27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB6C248-741C-432C-A6DE-ED266F7C0D27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB6C248-741C-432C-A6DE-ED266F7C0D27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB6C248-741C-432C-A6DE-ED266F7C0D27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F73699C-7F76-4732-BD3B-DA0710D4A7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F73699C-7F76-4732-BD3B-DA0710D4A7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F73699C-7F76-4732-BD3B-DA0710D4A7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F73699C-7F76-4732-BD3B-DA0710D4A7D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
