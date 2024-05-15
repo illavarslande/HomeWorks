@@ -27,6 +27,7 @@ namespace FibonacciNumbers
                         fibonacci_2 = numberFibonacci;
                     }
                     Console.WriteLine($"Число Фибоначчи с индексом {yourNumber} - {numberFibonacci}");
+                    break;
                 }
             }
         }
