@@ -7,13 +7,19 @@ namespace LeapYear
         static void Main(string[] args)
         {
             Console.WriteLine("Введите год: ");
-            if (!int.TryParse(Console.ReadLine(), out int year) || year < 0)
+            string year = Console.ReadLine();
+
+            if (!int.TryParse(year, out int yearInt))
             {
-                Console.WriteLine("Вы ввели буквы или отрицательное значение.");
+                Console.WriteLine("Вы ввели буквы.");
             }
-            else
+            else if (yearInt < 0)
             {
-                if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+                Console.WriteLine("Вы ввели отрицательное значение.");
+            }
+            else 
+            {
+                if ((yearInt % 4 == 0 && yearInt % 100 != 0) || (yearInt % 400 == 0))
                 {
                     Console.WriteLine("Этот год високосный!");
                 }
