@@ -18,12 +18,12 @@ namespace NextDate
             {
                 if (year >= 0 && month >= 1 && month <= 12)
                 {
-                    bool leapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
                     int daysInMonth;
 
                     if (month == 2)
                     {
-                        daysInMonth = leapYear ? 29 : 28;
+                        bool isLeapYear = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+                        daysInMonth = isLeapYear ? 29 : 28;
                     }
                     else if (month == 4 || month == 6 || month == 9 || month == 11)
                     {
@@ -40,21 +40,23 @@ namespace NextDate
                     }
                     else
                     {
-                        day++;
+                        int nextDay = day + 1;
+                        int nextMonth = month;
+                        int nextYear = year;
 
-                        if (day > daysInMonth)
+
+                        if (nextDay > daysInMonth)
                         {
-                            day = 1;
-                            month++;
+                            nextDay = 1;
+                            nextMonth = month + 1;
 
-                            if (month > 12)
+                            if (nextMonth > 12)
                             {
-                                month = 1;
-                                year++;
+                                nextMonth = 1;
+                                nextYear = year + 1;
                             }
                         }
-
-                        Console.WriteLine($"Сдедующая дата: {day}.{month}.{year}!");
+                        Console.WriteLine($"Сдедующая дата: {nextDay}.{nextMonth}.{nextYear}!");
                     }
                 }
                 else
