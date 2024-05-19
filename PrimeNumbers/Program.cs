@@ -12,7 +12,7 @@ namespace PrimeNumbers
             {
                 Console.WriteLine("Введите целое число: ");
                 string numberInput = Console.ReadLine();
-                if (!int.TryParse(numberInput, out number))
+                if (!int.TryParse(numberInput, out number) || number < 0)
                 {
                     Console.WriteLine("Введите корректное значение");
                 }
