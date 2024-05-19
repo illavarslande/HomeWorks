@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Apartments", "Apartments\Ap
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FibonacciNumbers", "FibonacciNumbers\FibonacciNumbers.csproj", "{C87AB8F5-A4AC-4533-8D92-191E44EE151E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitsOfNumber", "DigitsOfNumber\DigitsOfNumber.csproj", "{D24F2F7C-B04A-45E8-B7B6-A36CAFD9F350}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitsOfNumber", "DigitsOfNumber\DigitsOfNumber.csproj", "{D24F2F7C-B04A-45E8-B7B6-A36CAFD9F350}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumbers", "PrimeNumbers\PrimeNumbers.csproj", "{3DDADE95-69BA-40EC-9475-D8798EC57B84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{D24F2F7C-B04A-45E8-B7B6-A36CAFD9F350}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D24F2F7C-B04A-45E8-B7B6-A36CAFD9F350}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D24F2F7C-B04A-45E8-B7B6-A36CAFD9F350}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DDADE95-69BA-40EC-9475-D8798EC57B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DDADE95-69BA-40EC-9475-D8798EC57B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DDADE95-69BA-40EC-9475-D8798EC57B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DDADE95-69BA-40EC-9475-D8798EC57B84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -36,7 +36,7 @@ namespace NextDate
 
                     if (day <= 0 || day > daysInMonth)
                     {
-                        Console.WriteLine("Вы ввели некоректное значение.");
+                        Console.WriteLine("Вы ввели некорректное значение.");
                     }
                     else
                     {
@@ -61,12 +61,12 @@ namespace NextDate
                 }
                 else
                 {
-                    Console.WriteLine("Вы ввели некоректное значение.");
+                    Console.WriteLine("Вы ввели некорректное значение.");
                 }
             }
             else 
             {
-                Console.WriteLine("Вы ввели некоректное значение.");
+                Console.WriteLine("Вы ввели некорректное значение.");
             }
         }
     }
