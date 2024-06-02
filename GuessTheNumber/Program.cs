@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace GuessTheNumber
+namespace GuessNumber
 {
     internal class Program
     {
@@ -10,7 +10,7 @@ namespace GuessTheNumber
             Console.WriteLine(number);
             int attempts = 1;
 
-            Console.Write("Угадайте число от 1 до 100: ");
+            Console.Write("Guess the number from 1 to 100: ");
 
             while (true)
             {
@@ -18,20 +18,25 @@ namespace GuessTheNumber
 
                 if (!int.TryParse(yourNumberInput, out int yourNumber) || yourNumber < 1 || yourNumber > 100)
                 {
-                    Console.WriteLine("Вы ввели некорректные значения.");
+                    Console.WriteLine("You have entered incorrect values.");
                 }
                 else
                 {
                 
-                    if (number == yourNumber)
+                    if (number < yourNumber)
                     {
-                        Console.WriteLine($"Верно! Количество попыток: {attempts}.");
-                        break;
+                        Console.WriteLine("Wrong! Try again. Your number is less than expected.");
+                        attempts++;
+                    }
+                    else if (number > yourNumber)
+                    {
+                        Console.WriteLine("Wrong! Try again. Your number is more than expected.");
+                        attempts++;
                     }
                     else
                     {
-                        Console.WriteLine("Не верно! Попробуйте снова.");
-                        attempts++;
+                        Console.WriteLine($"Right! Number of attempts: {attempts}.");
+                        break;
                     }
                 }
             }

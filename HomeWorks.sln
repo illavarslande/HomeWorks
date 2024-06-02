@@ -31,9 +31,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EuclideanAlgorithm", "Eucli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplicationTable", "MultiplicationTable\MultiplicationTable.csproj", "{00863BA5-82F5-4992-982E-ECC58C0D2141}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessTheNumber", "GuessTheNumber\GuessTheNumber.csproj", "{9527DC22-26A1-4AEF-B0E5-29D81CFCD929}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuessNumber", "GuessTheNumber\GuessNumber.csproj", "{9527DC22-26A1-4AEF-B0E5-29D81CFCD929}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deposit", "Deposit\Deposit.csproj", "{B6AC6064-E3B5-447A-B475-E2CFE0B93F6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Deposit", "Deposit\Deposit.csproj", "{B6AC6064-E3B5-447A-B475-E2CFE0B93F6A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
