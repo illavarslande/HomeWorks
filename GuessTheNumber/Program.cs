@@ -7,7 +7,6 @@ namespace GuessNumber
         static void Main(string[] args)
         {
             int number = new Random().Next(1, 100);
-            Console.WriteLine(number);
             int attempts = 1;
 
             Console.Write("Guess the number from 1 to 100: ");
