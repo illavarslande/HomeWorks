@@ -17,7 +17,6 @@ namespace MultiplicationTable
             {
                 Console.Clear();
 
-
                 Console.Write("    |");
                 for (int i = 1; i <= number; i++) 
                 {
