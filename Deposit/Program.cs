@@ -63,7 +63,6 @@ namespace Deposit
             Console.WriteLine();
 
             int allMonthes = 12;
-            
 
             double monthlyRate = (percent / 100) / allMonthes;
             Console.WriteLine($"Effective rate: {monthlyRate}");
