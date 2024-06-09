@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintAndRead", "PrintAndRea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Temperature", "Temperature\Temperature.csproj", "{037FF67E-A539-43D1-95AE-07663577697A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderCost", "OrderCost\OrderCost.csproj", "{A52CD2B0-26B6-4116-A52A-3B9F8E689CE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{037FF67E-A539-43D1-95AE-07663577697A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{037FF67E-A539-43D1-95AE-07663577697A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{037FF67E-A539-43D1-95AE-07663577697A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A52CD2B0-26B6-4116-A52A-3B9F8E689CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A52CD2B0-26B6-4116-A52A-3B9F8E689CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A52CD2B0-26B6-4116-A52A-3B9F8E689CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A52CD2B0-26B6-4116-A52A-3B9F8E689CE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
