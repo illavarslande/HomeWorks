@@ -6,7 +6,7 @@ namespace Temperature
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Input Celsius temperature: ");
+            Console.WriteLine("Enter Celsius temperature: ");
             string temperatureInput = Console.ReadLine();
 
             bool isInputNumber = int.TryParse(temperatureInput, out int temperature);
@@ -14,18 +14,21 @@ namespace Temperature
 
             if (!isInputNumber)
             {
-                Console.WriteLine("Input words, try again");
+                Console.WriteLine("Invalid value, enter number.");
                 return;
             }
             if (!isInputCorrect)
             {
-                Console.WriteLine("Input correct temperature.");
+                Console.WriteLine("Invalid value, enter correct temperature.");
                 return;
             }
 
+            int kelvin = ToKelvin(temperature);
+            int fahrenheit = ToFahrenheit(temperature);
+
             Console.WriteLine($"Celsius: {temperature}");
-            Console.WriteLine($"Kelvin: {ToKelvin(temperature)}");
-            Console.WriteLine($"Fahrenheit: {ToFahrenheit(temperature)}");
+            Console.WriteLine($"Kelvin: {ToKelvin(kelvin)}");
+            Console.WriteLine($"Fahrenheit: {ToFahrenheit(fahrenheit)}");
         }
 
         static int ToKelvin(int temperature)
