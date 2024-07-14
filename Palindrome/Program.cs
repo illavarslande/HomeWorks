@@ -11,13 +11,13 @@ namespace Palindrome
 
             int start = 0;
             int end = text.Length - 1;
-            while (start < end)
+            do
             {
-                while (start < end && !char.IsLetter(text[start]))
+                if (!char.IsLetter(text[start]))
                 {
                     start++;
                 }
-                while (start < end && !char.IsLetter(text[end]))
+                if (!char.IsLetter(text[end]))
                 {
                     end--;
                 }
@@ -29,6 +29,7 @@ namespace Palindrome
                 start++;
                 end--;
             }
+            while (start < end / 2);
             Console.WriteLine("Yout text is palindrome.");
         }
     }
