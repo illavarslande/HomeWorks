@@ -11,15 +11,17 @@ namespace Palindrome
 
             int start = 0;
             int end = text.Length - 1;
-            do
+            while (start < end)
             {
                 if (!char.IsLetter(text[start]))
                 {
                     start++;
+                    continue;
                 }
                 if (!char.IsLetter(text[end]))
                 {
                     end--;
+                    continue;
                 }
                 if (char.ToLower(text[start]) != char.ToLower(text[end]))
                 {
@@ -29,7 +31,6 @@ namespace Palindrome
                 start++;
                 end--;
             }
-            while (start < end / 2);
             Console.WriteLine("Yout text is palindrome.");
         }
     }
