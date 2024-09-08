@@ -43,7 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderCost", "OrderCost\Orde
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Palindrome", "Palindrome\Palindrome.csproj", "{4ADAF913-70E3-4053-A80E-00A95EEBCD00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxSubstring", "MaxSubstring\MaxSubstring.csproj", "{50E72C07-E79A-41B7-B77A-ED1BDE2C5231}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxSubstring", "MaxSubstring\MaxSubstring.csproj", "{50E72C07-E79A-41B7-B77A-ED1BDE2C5231}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchMaxNum", "SearchMaxNum\SearchMaxNum.csproj", "{25DF8F05-CD32-4558-870C-B825758639E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchElement", "SearchElement\SearchElement.csproj", "{F7BC84CC-1CE5-4738-947D-F885C550E80C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +139,14 @@ Global
 		{50E72C07-E79A-41B7-B77A-ED1BDE2C5231}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50E72C07-E79A-41B7-B77A-ED1BDE2C5231}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50E72C07-E79A-41B7-B77A-ED1BDE2C5231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25DF8F05-CD32-4558-870C-B825758639E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25DF8F05-CD32-4558-870C-B825758639E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25DF8F05-CD32-4558-870C-B825758639E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25DF8F05-CD32-4558-870C-B825758639E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7BC84CC-1CE5-4738-947D-F885C550E80C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7BC84CC-1CE5-4738-947D-F885C550E80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7BC84CC-1CE5-4738-947D-F885C550E80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7BC84CC-1CE5-4738-947D-F885C550E80C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
