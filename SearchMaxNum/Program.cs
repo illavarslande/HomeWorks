@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata.Ecma335;
 
 namespace SearchMaxNum
 {
@@ -8,7 +9,6 @@ namespace SearchMaxNum
         {
             Random random = new Random();
             double[] array = new double[random.Next(10)];
-            double maxNum = 0;
 
             for (int i = 0; i < array.Length; i++)
             {
@@ -16,13 +16,14 @@ namespace SearchMaxNum
                 Console.Write(array[i]);
                 Console.WriteLine();
             }
-            maxNum = SearchMaxNum(array, maxNum);
+            double maxNum = SearchMaxNum(array);
             Console.WriteLine();
             Console.WriteLine($"The maximum number of this array is {maxNum}.");
         }
 
-        static double SearchMaxNum(double[] array, double maxNum)
+        static double SearchMaxNum(double[] array)
         {
+            double maxNum = 0;
             for (int i = 0;i < array.Length;i++)
             {
                 if (array[i] > maxNum)
