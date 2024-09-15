@@ -15,10 +15,11 @@ namespace ArrayEvenAverage
                 Console.Write($"{array[i]} ");
             }
             Console.WriteLine();
+            Console.WriteLine();
 
             int temp = 0;
             double countEven = 0;
-            for (int i = 0;i < array.Length;i++)
+            for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] % 2 == 0)
                 {
@@ -30,8 +31,15 @@ namespace ArrayEvenAverage
                     continue;
                 }
             }
-            double arrayEvenAverage = temp / countEven;
-            Console.WriteLine($"{Math.Round (arrayEvenAverage, 2)}");
+            if (countEven > 0)
+            {
+                double arrayEvenAverage = temp / countEven;
+                Console.WriteLine($"{Math.Round(arrayEvenAverage, 2)}");
+            } 
+            else 
+            {
+                Console.WriteLine("Array has not even numbers.");
+            }
         }
     }
 }
