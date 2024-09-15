@@ -51,7 +51,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuessNumber", "GuessNumber\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpperCase", "UpperCase\UpperCase.csproj", "{D10A0B61-B4A0-4FBA-BB8D-7C6A5E60E275}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayEvenAverage", "ArrayAverage\ArrayEvenAverage.csproj", "{44ACF5E9-9775-4613-9B67-AD34F6BEDCF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayEvenAverage", "ArrayEvenAverage\ArrayEvenAverage.csproj", "{44ACF5E9-9775-4613-9B67-AD34F6BEDCF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
