@@ -49,11 +49,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchElement", "SearchElem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuessNumber", "GuessNumber\GuessNumber.csproj", "{DFF1F32B-AF10-45A0-9117-E75319579A87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpperCase", "UpperCase\UpperCase.csproj", "{D10A0B61-B4A0-4FBA-BB8D-7C6A5E60E275}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UpperCase", "UpperCase\UpperCase.csproj", "{D10A0B61-B4A0-4FBA-BB8D-7C6A5E60E275}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayEvenAverage", "ArrayAverage\ArrayEvenAverage.csproj", "{44ACF5E9-9775-4613-9B67-AD34F6BEDCF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayReverse", "ArrayReverse\ArrayReverse.csproj", "{1F974316-433A-4AA4-85C5-0F08EECD58CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayReverse", "ArrayReverse\ArrayReverse.csproj", "{1F974316-433A-4AA4-85C5-0F08EECD58CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvenNumbersAverageArray", "EvenNumbersAverageArray\EvenNumbersAverageArray.csproj", "{ECAD62F0-15F9-4CC0-BD9A-92187C064360}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -157,14 +157,14 @@ Global
 		{D10A0B61-B4A0-4FBA-BB8D-7C6A5E60E275}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D10A0B61-B4A0-4FBA-BB8D-7C6A5E60E275}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D10A0B61-B4A0-4FBA-BB8D-7C6A5E60E275}.Release|Any CPU.Build.0 = Release|Any CPU
-		{44ACF5E9-9775-4613-9B67-AD34F6BEDCF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{44ACF5E9-9775-4613-9B67-AD34F6BEDCF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{44ACF5E9-9775-4613-9B67-AD34F6BEDCF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{44ACF5E9-9775-4613-9B67-AD34F6BEDCF2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1F974316-433A-4AA4-85C5-0F08EECD58CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1F974316-433A-4AA4-85C5-0F08EECD58CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F974316-433A-4AA4-85C5-0F08EECD58CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F974316-433A-4AA4-85C5-0F08EECD58CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECAD62F0-15F9-4CC0-BD9A-92187C064360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAD62F0-15F9-4CC0-BD9A-92187C064360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAD62F0-15F9-4CC0-BD9A-92187C064360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAD62F0-15F9-4CC0-BD9A-92187C064360}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

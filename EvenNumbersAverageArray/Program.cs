@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ArrayEvenAverage
+namespace EvenNumbersAverageArray
 {
     internal class Program
     {
