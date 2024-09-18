@@ -17,24 +17,23 @@ namespace EvenNumbersAverageArray
             Console.WriteLine();
             Console.WriteLine();
 
-            int temp = 0;
-            double countEven = 0;
+            double temp = 0;
+            int countEvenNumbers = 0;
+
             for (int i = 0; i < array.Length; i++)
             {
                 if (array[i] % 2 == 0)
                 {
                     temp += array[i];
-                    countEven++;
+                    countEvenNumbers++;
                 }
-                else
-                {
-                    continue;
-                }
+                continue;
             }
-            if (countEven > 0)
+
+            if (countEvenNumbers > 0)
             {
-                double arrayEvenAverage = temp / countEven;
-                Console.WriteLine($"{Math.Round(arrayEvenAverage, 2)}");
+                double arrayEvenNumbersAverage = temp / countEvenNumbers;
+                Console.WriteLine($"{Math.Round(arrayEvenNumbersAverage, 2)}");
             } 
             else 
             {
