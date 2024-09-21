@@ -55,6 +55,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvenNumbersAverageArray", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayReverse", "ArrayReverse\ArrayReverse.csproj", "{1F974316-433A-4AA4-85C5-0F08EECD58CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckingSorting", "CheckingSorting\CheckingSorting.csproj", "{B30742E3-A543-45B8-8339-7F292DE294A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{1F974316-433A-4AA4-85C5-0F08EECD58CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F974316-433A-4AA4-85C5-0F08EECD58CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F974316-433A-4AA4-85C5-0F08EECD58CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B30742E3-A543-45B8-8339-7F292DE294A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B30742E3-A543-45B8-8339-7F292DE294A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30742E3-A543-45B8-8339-7F292DE294A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B30742E3-A543-45B8-8339-7F292DE294A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
