@@ -23,18 +23,38 @@ namespace Exponentiation
             }
             Console.WriteLine();
 
-                int result = Power(baseNumber, exponent);
-                Console.WriteLine($"{baseNumber} raised to the power of {exponent} is: {result}");
+            int resultRecursion = PowerRecursion(baseNumber, exponent);
+            Console.WriteLine($"{baseNumber} raised to the power of {exponent} is: {resultRecursion}");
+            Console.WriteLine();
+
+            int resultNonRecursion = PowerNonRecursion(baseNumber,exponent);
+            Console.WriteLine($"{baseNumber} raised to the power of {exponent} is: {resultNonRecursion}");
+
         }
 
-        static int Power(int baseNumber, int exponent)
+        static int PowerRecursion(int baseNumber, int exponent)
         {
             if (exponent == 0)
             {
                 return 1;
             }
 
-            return baseNumber * Power(baseNumber, exponent - 1);
+            return baseNumber * PowerRecursion(baseNumber, exponent - 1);
+        }
+
+        static int PowerNonRecursion(int baseNumber, int exponent)
+        {
+            if (exponent == 0) 
+            { 
+                return 1; 
+            }
+
+            int temp = 1;
+            for (int i = 0; i < exponent; i++)
+            {
+                temp *= baseNumber; 
+            }
+            return temp;
         }
     }
 }
