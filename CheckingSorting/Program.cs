@@ -13,34 +13,48 @@ namespace CheckingSorting
                 Console.Write($"{array[i]} ");
             }
             Console.WriteLine();
-            IsAscendingSort(array);
-            IsDescendingSort(array);
+
+            if (IsAscendingSort(array))
+            {
+                Console.WriteLine("The array is sorted in ascending order.");
+            }
+            else
+            {
+                Console.WriteLine("The array is not sorted in ascending order.");
+            }
+           
+            if (IsDescendingSort(array))
+            {
+                Console.WriteLine("The array is sorted in descending order.");
+            }
+            else
+            {
+                Console.WriteLine("The array is not sorted in descending order.");
+            }
         }
 
-        static void IsAscendingSort(int[] array)
+        static bool IsAscendingSort(int[] array)
         {
             for (int i = 1; i < array.Length; i++)
             {
                 if (array[i] < array[i - 1])
                 {
-                    Console.WriteLine("The array is not sorted in ascending order.");
-                    return;
+                    return false;
                 }
             }
-            Console.WriteLine("The array is sorted in ascending order.");
+            return true;
         }
 
-        static  void IsDescendingSort(int[] array)
+        static  bool IsDescendingSort(int[] array)
         {
             for (int i = array.Length - 1; i > 0; i--)
             {
                 if (array[i] > array[i - 1])
                 {
-                    Console.WriteLine("The array is not sorted in descending order.");
-                    return;
+                    return false;
                 }
             }
-            Console.WriteLine("The array is sorted in descending order.");
+            return true;
         }
     }
 }
