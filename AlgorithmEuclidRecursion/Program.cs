@@ -17,8 +17,8 @@ namespace AlgorithmEuclidRecursion
                 Console.WriteLine("You have entered incorrect values.");
                 return;
             }
-                int divisor = СalculationGCD(value1, value2);
-                Console.WriteLine($"{divisor}");
+            int divisor = СalculationGCD(value1, value2);
+            Console.WriteLine($"{divisor}");
         }
 
         static int СalculationGCD(int value1, int value2)
