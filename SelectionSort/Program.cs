@@ -7,6 +7,12 @@ namespace SelectionSort
         static void Main(string[] args)
         {
             int[] array = { 43, 5, 0, 13, 22, 14, 45 };
+            Console.Write(" Array: ");
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write($"{array[i]}  ");
+            }
+            Console.WriteLine();
 
             for (int i = 0; i < array.Length; i++)
             {
@@ -27,6 +33,7 @@ namespace SelectionSort
                 }
             }
 
+            Console.Write("Sorted array: ");
             for (int i = 0; i < array.Length; i++)
             {
                 Console.Write($"{array[i]}  ");
