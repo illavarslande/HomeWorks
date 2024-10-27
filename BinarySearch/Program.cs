@@ -28,7 +28,7 @@ namespace BinarySearch
             int resultWithRecursion = SearchWithRecursion(array, value, left, right);
             Console.WriteLine($"Index of the target value: {resultWithRecursion}");
 
-            int resultWithoutRecursion = SearchWithoutRecursion(array, value, left, right);
+            int resultWithoutRecursion = SearchWithoutRecursion(array, value);
             Console.WriteLine($"Index of the target value: {resultWithoutRecursion}");
         }
 
@@ -54,31 +54,27 @@ namespace BinarySearch
             return SearchWithRecursion(array, value, middle + 1, right);
         }
 
-        static int SearchWithoutRecursion(int[] array, int value, int left, int right)
+        static int SearchWithoutRecursion(int[] array, int value)
         {
-            for (; ; )
+            int left = 0;
+            int right = array.Length - 1;
+            while (left <= right)
             {
+                int middle = left + (right - left) / 2;
+                if (array[middle] == value)
                 {
-                    if (left > right)
-                    {
-                        return -1;
-                    }
-
-                    int middle = left + (right - left) / 2;
-                    if (array[middle] == value)
-                    {
-                        return middle; 
-                    }
-                    else if (array[middle] > value)
-                    {
-                        right = middle - 1;
-                    }
-                    else 
-                    {
-                        left = middle + 1;
-                    }
+                    return middle; 
+                }
+                else if (array[middle] > value)
+                {
+                    right = middle - 1;
+                }
+                else 
+                {
+                    left = middle + 1;
                 }
             }
+            return -1;
         }
     }
 }
