@@ -73,6 +73,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InsertionSort", "InsertionS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSorting", "FastSorting\QuickSorting.csproj", "{A5795704-1437-4B7C-9A40-9403B659B676}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapSort", "HeapSort\HeapSort.csproj", "{74CE9937-6B12-417D-9738-E00A040437A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +221,10 @@ Global
 		{A5795704-1437-4B7C-9A40-9403B659B676}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5795704-1437-4B7C-9A40-9403B659B676}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5795704-1437-4B7C-9A40-9403B659B676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74CE9937-6B12-417D-9738-E00A040437A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74CE9937-6B12-417D-9738-E00A040437A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74CE9937-6B12-417D-9738-E00A040437A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74CE9937-6B12-417D-9738-E00A040437A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
