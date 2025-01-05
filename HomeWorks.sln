@@ -75,7 +75,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickSorting", "FastSorting
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HeapSort", "HeapSort\HeapSort.csproj", "{74CE9937-6B12-417D-9738-E00A040437A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilderTask", "StringBuilderTask\StringBuilderTask.csproj", "{B2DCA667-B9D7-403F-94D5-65A8DD46A768}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringBuilderTask", "StringBuilderTask\StringBuilderTask.csproj", "{B2DCA667-B9D7-403F-94D5-65A8DD46A768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URL", "URL\URL.csproj", "{320418C4-5C5A-43ED-BF84-C4C24A39DDFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -231,6 +233,10 @@ Global
 		{B2DCA667-B9D7-403F-94D5-65A8DD46A768}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2DCA667-B9D7-403F-94D5-65A8DD46A768}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2DCA667-B9D7-403F-94D5-65A8DD46A768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320418C4-5C5A-43ED-BF84-C4C24A39DDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320418C4-5C5A-43ED-BF84-C4C24A39DDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320418C4-5C5A-43ED-BF84-C4C24A39DDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320418C4-5C5A-43ED-BF84-C4C24A39DDFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
