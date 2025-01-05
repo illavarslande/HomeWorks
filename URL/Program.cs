@@ -9,8 +9,8 @@ namespace URL
             string url = "https://SomeServerName/abcd/dfdf.htm?dfdf=dfdf";
             string chars = "SomeServerName";
             int startIndex = url.IndexOf(chars);
-            string a = url.Substring(startIndex, chars.Length);
-            Console.WriteLine(a);
+            string result = url.Substring(startIndex, chars.Length);
+            Console.WriteLine(result);
         }
     }
 }
