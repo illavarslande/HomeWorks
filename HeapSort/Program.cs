@@ -8,20 +8,15 @@ namespace HeapSort
         {
             int[] array = { 8, 15, 3, 0, -8, 5, 6, 7 };
             Console.WriteLine("Array without sorting:");
-            PrintArray(array);
-            Console.WriteLine();
+            string arrayStr = string.Join(",", array);
+            Console.WriteLine(arrayStr);
 
             HeapSort(array);
-            PrintArray(array);
+            arrayStr = string.Join(",", array);
+            Console.WriteLine("Sorted array:");
+            Console.WriteLine(arrayStr);
         }
 
-        static void PrintArray(int[] array)
-        {
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.Write($"{array[i]}  ");
-            }
-        }
 
         static void Swap(ref int num1, ref int num2)
         {
@@ -31,41 +26,41 @@ namespace HeapSort
         }
 
 
-        static void Heapify(int[] array, int i, int n)
+        static void Heapify(int[] array, int rootIndex, int arrayLength)
         {
-            int child1 = i * 2 + 1;
-            int child2 = i * 2 + 2;
-            int largest = i;
+            int child1 = rootIndex * 2 + 1;
+            int child2 = rootIndex * 2 + 2;
+            int largest = rootIndex;
 
-            if (child1 < n && array[child1] > array[largest])
+            if (child1 < arrayLength && array[child1] > array[largest])
             {
                 largest = child1;
             }
-            if (child2 < n && array[child2] > array[largest])
+            if (child2 < arrayLength && array[child2] > array[largest])
             {
                 largest = child2;
             }
 
-            if (i != largest)
+            if (rootIndex != largest)
             {
-                Swap(ref array[i], ref array[largest]);
-                Heapify(array, largest, n);
+                Swap(ref array[rootIndex], ref array[largest]);
+                Heapify(array, largest, arrayLength);
             }
         }
 
         static void HeapSort(int[] array)
         {
-            int n = array.Length;
-            for (int i = n / 2 - 1; i >= 0; i--)
+            int arrayLength = array.Length;
+            for (int lastIndex = arrayLength / 2 - 1; lastIndex >= 0; lastIndex--)
             {
-                Heapify(array, i, n);
+                Heapify(array, lastIndex, arrayLength);
             }
 
-            for (int i = n - 1; i >= 0; i--)
+            for (int lastIndex = arrayLength - 1; lastIndex >= 0; lastIndex--)
             {
-                Swap(ref array[i], ref array[0]);
+                Swap(ref array[lastIndex], ref array[0]);
 
-                Heapify(array, 0, i);
+                Heapify(array, 0, lastIndex);
             }
         }
     }
