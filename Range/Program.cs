@@ -7,10 +7,10 @@ namespace Range
     {
         static void Main(string[] args)
         {
-            Range range = new Range(-5, 10);
+            Range range = new Range(7, 8);
             Console.WriteLine($"Range1: {range.from}, {range.to}");
 
-            Range range1 = new Range(-6, 10);
+            Range range1 = new Range(6, 10);
             Console.WriteLine($"Range2: {range1.from}, {range1.to}");
 
             int length = range.Length();
@@ -35,7 +35,7 @@ namespace Range
             }
             else
             {
-                Console.WriteLine($"Intersection: {intersection.from}, {intersection.to}");
+                Console.WriteLine($"Intersection: [{intersection.from}, {intersection.to}]");
             }
 
             Range[] getSum = range.GetUnion(range1);

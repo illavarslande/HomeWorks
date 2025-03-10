@@ -27,55 +27,44 @@ namespace Range
 
         public Range? GetIntersection(Range range)
         {
-            int newFrom = Math.Max(from, range.from);
-            int newTo = Math.Min(to, range.to);
-            if (newFrom <= newTo)
+            int intersectFrom = Math.Max(from, range.from);
+            int intersectTo = Math.Min(to, range.to);
+            if (intersectFrom <= intersectTo)
             {
-                return new Range(newFrom, newTo);
+                return new Range(intersectFrom, intersectTo);
             }
             return null;
         }
 
-/*        public Range[] GetUnion(Range range)
-        {
-            if (IsInside(range.from) || IsInside(range.to))
-            {
-                int newFrom = from + range.from;
-                int newTo = to + range.to;
-                return new Range[] { new Range(newFrom, newTo) };
-            }
-            return new Range[] { new Range(from, to), new Range(range.from, range.to) };
-        }
-
-            public Range[] GetDifference(Range range)
-        {
-            if (IsInside(range.from) || IsInside(range.to))
-            {
-                int newFrom = from - range.from;
-                int newTo = to - range.to;
-                return new Range[] { new Range(newFrom, newTo) };
-            }
-            return new Range[] { new Range(from, to), new Range(range.from, range.to) };
-        }
-*/
         public Range[] GetUnion(Range range)
         {
+            if (to > range.from || from < range.to) //Range в интервале range
+            {
+                return new Range[] { new Range(range.from, range.to) };
+            }
+            if (from < range.from && to > range.to) //range в интервале
+            {
+                return new Range[] { new Range(from, to) };
+            }
             if (IsInside(range.from) || IsInside(range.to))
             {
                 int newFrom = Math.Min(from, range.from);
                 int newTo = Math.Max(to, range.to);
                 return new Range[] { new Range(newFrom, newTo) };
             }
-            return new Range[] { new Range(from, to), new Range(range.from, range.to) };
+            else
+            {
+                    return new Range[0];
+            }
         }
 
         public Range[] GetDifference(Range range)
         {
-            if (to <= range.from || from >= range.to)
+            if (to < range.from || from > range.to)
             {
                 return new Range[] { new Range(from, to) };
             }
-            if (range.from < from && range.to >= to)
+            if (range.from < from && range.to > to)
             {
                 return new Range[0];
             }
