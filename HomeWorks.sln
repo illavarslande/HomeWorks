@@ -85,7 +85,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileConversionToUppercase",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CountOccurrences", "CountOccurrences\CountOccurrences.csproj", "{51EB8E23-895A-442B-9B77-DD4F55BDCC2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Range", "Range\Range.csproj", "{9680B6B0-ECFC-437F-BB2C-A2E80E49D768}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Range", "Range\Range.csproj", "{9680B6B0-ECFC-437F-BB2C-A2E80E49D768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shape", "Shape\Shape.csproj", "{92C96828-853A-4561-BA81-6EAD1D7F7B53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -261,6 +263,10 @@ Global
 		{9680B6B0-ECFC-437F-BB2C-A2E80E49D768}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9680B6B0-ECFC-437F-BB2C-A2E80E49D768}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9680B6B0-ECFC-437F-BB2C-A2E80E49D768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92C96828-853A-4561-BA81-6EAD1D7F7B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C96828-853A-4561-BA81-6EAD1D7F7B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C96828-853A-4561-BA81-6EAD1D7F7B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C96828-853A-4561-BA81-6EAD1D7F7B53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
