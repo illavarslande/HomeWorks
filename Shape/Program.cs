@@ -13,7 +13,7 @@ namespace Shape
 
             Console.WriteLine();
 
-           Rectangle rectangle = new Rectangle(3, 6);
+            Rectangle rectangle = new Rectangle(3, 6);
             rectangle.PrintName();
             Console.WriteLine($"Area: {rectangle.GetArea()}");
             Console.WriteLine($"Perimeter: {rectangle.GetPerimeter()}");
