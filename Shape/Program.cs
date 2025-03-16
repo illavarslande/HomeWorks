@@ -24,6 +24,12 @@ namespace Shape
             triangle.PrintName();
             Console.WriteLine($"Perimeter: {triangle.GetPerimeter()}");
             Console.WriteLine($"Area: {triangle.GetArea()}");
+
+            Shape[] shapes = { circle, rectangle, triangle };
+            foreach ( Shape shape in shapes )
+            {
+                shape.PrintName();
+            }
         }
     }
 }
