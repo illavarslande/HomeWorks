@@ -7,10 +7,10 @@ namespace Range
     {
         static void Main(string[] args)
         {
-            Range range = new Range(7, 8);
+            Range range = new Range(3, 7);
             Console.WriteLine($"Range1: {range.from}, {range.to}");
 
-            Range range1 = new Range(6, 10);
+            Range range1 = new Range(10, 15);
             Console.WriteLine($"Range2: {range1.from}, {range1.to}");
 
             int length = range.Length();

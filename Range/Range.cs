@@ -38,24 +38,23 @@ namespace Range
 
         public Range[] GetUnion(Range range)
         {
-            if (to > range.from || from < range.to) //Range в интервале range
-            {
-                return new Range[] { new Range(range.from, range.to) };
-            }
-            if (from < range.from && to > range.to) //range в интервале
-            {
-                return new Range[] { new Range(from, to) };
-            }
-            if (IsInside(range.from) || IsInside(range.to))
+            if (to >= range.from && from <= range.to)
             {
                 int newFrom = Math.Min(from, range.from);
                 int newTo = Math.Max(to, range.to);
                 return new Range[] { new Range(newFrom, newTo) };
             }
-            else
+            if (from <= range.from && to >= range.to)
             {
-                    return new Range[0];
+                return new Range[] { new Range(from, to) };
             }
+
+            if (range.from <= from && range.to >= to)
+            {
+                return new Range[] { new Range(range.from, range.to) };
+            }
+
+            return new Range[] { new Range(from, to), new Range(range.from, range.to) };
         }
 
         public Range[] GetDifference(Range range)
