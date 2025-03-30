@@ -40,21 +40,9 @@ namespace Range
         {
             if (to >= range.from && from <= range.to)
             {
-                int newFrom = Math.Min(from, range.from);
-                int newTo = Math.Max(to, range.to);
-                return new Range[] { new Range(newFrom, newTo) };
+                return new Range[] { new Range(Math.Min(from, range.from), Math.Max(to, range.to)) };
             }
-            if (from <= range.from && to >= range.to)
-            {
-                return new Range[] { new Range(from, to) };
-            }
-
-            if (range.from <= from && range.to >= to)
-            {
-                return new Range[] { new Range(range.from, range.to) };
-            }
-
-            return new Range[] { new Range(from, to), new Range(range.from, range.to) };
+            return new Range[] { this, range };
         }
 
         public Range[] GetDifference(Range range)
@@ -65,7 +53,7 @@ namespace Range
             }
             if (range.from < from && range.to > to)
             {
-                return new Range[0];
+                return Array.Empty<Range>();
             }
 
             List<Range> result = new List<Range>();

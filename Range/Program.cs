@@ -38,14 +38,14 @@ namespace Range
                 Console.WriteLine($"Intersection: [{intersection.from}, {intersection.to}]");
             }
 
-            Range[] getSum = range.GetUnion(range1);
-            foreach (var sumRange in getSum)
+            Range[] unionRanges = range.GetUnion(range1);
+            foreach (var sumRange in unionRanges)
             {
                 Console.WriteLine($"Sum: [{sumRange.from}, {sumRange.to}]");
             }
 
-            Range[] getDifference = range.GetDifference(range1);
-            foreach (var differenceRange in getDifference)
+            Range[] differenceRanges = range.GetDifference(range1);
+            foreach (var differenceRange in differenceRanges)
             {
                 Console.WriteLine($"Difference: [{differenceRange.from}, {differenceRange.to}]");
             }
