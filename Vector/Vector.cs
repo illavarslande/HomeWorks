@@ -1,7 +1,4 @@
-﻿using System;
-using System.Linq;
-
-namespace Vector
+﻿namespace Vector
 {
     internal class Vector
     {
@@ -47,7 +44,7 @@ namespace Vector
 
         }
 
-        public Vector Subrtact(Vector other) 
+        public Vector Subtract(Vector other) 
         {
             if (Size != other.Size)
             {
@@ -85,7 +82,7 @@ namespace Vector
 
         public void Print()
         {
-            System.Console.WriteLine(String.Join(",", data));
+            Console.WriteLine(String.Join(",", data));
         }
     }
 }

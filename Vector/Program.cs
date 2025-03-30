@@ -22,7 +22,7 @@ namespace Vector
             sum.Print();
             Console.WriteLine();
 
-            Vector substract = vector1.Subrtact(vector2);
+            Vector substract = vector1.Subtract(vector2);
             Console.Write("Difference of vectors: ");
             substract.Print();
             Console.WriteLine();
