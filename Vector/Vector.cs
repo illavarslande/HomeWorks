@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Linq;
 
 namespace Vector
 {
     internal class Vector
     {
-        float[] data;
-        int Size { get; }
+        private float[] data;
+        public int Size { get; }
 
         public Vector(int size)
         {
@@ -46,7 +47,7 @@ namespace Vector
 
         }
 
-        public Vector Subsrtact(Vector other) 
+        public Vector Subrtact(Vector other) 
         {
             if (Size != other.Size)
             {
@@ -84,11 +85,7 @@ namespace Vector
 
         public void Print()
         {
-            Console.Write("Vector: ");
-            for (int i = 0; i < Size; i++)
-            {
-                Console.Write($"{data[i]} ");
-            }
+            System.Console.WriteLine(String.Join(",", data));
         }
     }
 }
