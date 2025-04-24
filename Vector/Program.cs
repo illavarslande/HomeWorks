@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vector
+namespace VectorsMatrix
 {
     class Program
     {
@@ -35,6 +35,55 @@ namespace Vector
             float dotProduct = vector1.DotProduct(vector2);
             Console.Write("Dot product: ");
             Console.WriteLine(dotProduct);
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Matrix matrix1 = new Matrix(new Vector[]
+            {
+                new Vector(new float[] {1, 5, 7}),
+                new Vector(new float[] {3, 2, 3})
+            });
+
+            Matrix matrix2 = new Matrix(new Vector[]
+            {
+            new Vector(new float[] {0, 5, 10}),
+            new Vector(new float[] {3, 2, 6})
+            });
+
+            Console.WriteLine();
+            Console.WriteLine("Matrix1:");
+            matrix1.Print();
+            Console.WriteLine("Matrix2:");
+            matrix2.Print();
+
+            Matrix sumMatrix = matrix1.Add(matrix2);
+            Console.WriteLine("Matrix1 + Matrix2:");
+            sumMatrix.Print();
+
+            Matrix diffMatrix = matrix1.Subtract(matrix2);
+            Console.WriteLine("Matrix1 - Matrix2:");
+            diffMatrix.Print();
+
+            Matrix scaledMatrix = matrix1.MultiplyByScalar(2);
+            Console.WriteLine("matrix1 * 2:");
+            scaledMatrix.Print();
+
+            Vector vec = new Vector(new float[] { 0, 1, 4 });
+            Vector resultMultiplyVec = matrix1.Multiply(vec);
+            Console.WriteLine("matrix1 * [0, 1, 4]:");
+            resultMultiplyVec.Print();
+
+            Matrix matrix3 = new Matrix(new Vector[]
+            {
+            new Vector(new float[] {1, 2}),
+            new Vector(new float[] {2, 4}),
+            new Vector(new float[] {0, 1})
+            });
+
+            Matrix productMultiplyMatrix = matrix1.Multiply(matrix3);
+            Console.WriteLine("Matrix1 * Matrix3:");
+            productMultiplyMatrix.Print();
         }
     }
 }

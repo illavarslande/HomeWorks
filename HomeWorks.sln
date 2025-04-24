@@ -89,7 +89,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Range", "Range\Range.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shape", "Shape\Shape.csproj", "{92C96828-853A-4561-BA81-6EAD1D7F7B53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vector", "Vector\Vector.csproj", "{DA4AA8B9-C11A-4B31-A286-A9D68F627AFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VectorsMatrix", "Vector\VectorsMatrix.csproj", "{DA4AA8B9-C11A-4B31-A286-A9D68F627AFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

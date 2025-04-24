@@ -1,4 +1,4 @@
-﻿namespace Vector
+﻿namespace VectorsMatrix
 {
     internal class Vector
     {
