@@ -1,0 +1,9 @@
+A Game of Thrones,George R.R. Martin,1996
+Harry Potter and Philosopher's Stone,J. K. Rowling,1997
+A Clash of Kings,George R.R. Martin,1998
+Harry Potter and Chamber of Secrets,J. K. Rowling,1998
+Days Without End,Sebastian Barry,2016
+Autumn,Ali Smith,2016
+Gilead,Marilynne Robinson,2004
+Never Let Me Go,Kazuo Ishiguro,2005
+The Amber Spyglass,Philip Pullman,2000

@@ -91,6 +91,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shape", "Shape\Shape.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VectorsMatrix", "Vector\VectorsMatrix.csproj", "{DA4AA8B9-C11A-4B31-A286-A9D68F627AFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "ListBooks\Library.csproj", "{83A78C28-8588-475B-B2BB-3E4D932D0256}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -273,6 +275,10 @@ Global
 		{DA4AA8B9-C11A-4B31-A286-A9D68F627AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA4AA8B9-C11A-4B31-A286-A9D68F627AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA4AA8B9-C11A-4B31-A286-A9D68F627AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A78C28-8588-475B-B2BB-3E4D932D0256}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A78C28-8588-475B-B2BB-3E4D932D0256}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A78C28-8588-475B-B2BB-3E4D932D0256}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A78C28-8588-475B-B2BB-3E4D932D0256}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
